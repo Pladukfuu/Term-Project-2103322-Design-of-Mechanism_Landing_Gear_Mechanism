@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<robot name="Landing_gear_v5" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<material name="Landing_gear_v5_silver">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+
+<material name="Landing_gear_v5_color0">
+  <color rgba="0.988 0.737 0.518 1.0"/>
+</material>
+
+<material name="Landing_gear_v5_color1">
+  <color rgba="0.965 0.29 0.29 1.0"/>
+</material>
+
+<material name="Landing_gear_v5_color2">
+  <color rgba="0.529 1.0 0.576 1.0"/>
+</material>
+
+<material name="Landing_gear_v5_color3">
+  <color rgba="1.0 1.0 0.0 1.0"/>
+</material>
+
+</robot>
