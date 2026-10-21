@@ -33,3 +33,6 @@
   * Store kinematic equations and simulation models as `.m` scripts and `.slx` files (MATLAB/Simscape R2026a) under `simulation/`.
   * Export exchange formats like `.step` or `.stl` for cross-platform previewing.
 
+## Acknowledgements & References
+* **Base 3D CAD Model:** Adapted from "Aircraft Landing Gear" created by [BDMtalks](https://bdmtalks.myshopify.com/).
+* **Academic Use:** This CAD model is utilized strictly for educational and research purposes.
