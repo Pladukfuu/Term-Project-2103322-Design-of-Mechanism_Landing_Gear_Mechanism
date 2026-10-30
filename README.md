@@ -2,7 +2,7 @@
 
 - **Project name:** [Landing gear mechanism]
 - **Problem / purpose:** [To investigate the kinematic trajectories and linkage rotation angles during the retraction and deployment processes to ensure smooth and uninterrupted operation.]
-- **Team:** [Sawrasit Sriviset : Simscape Multibody and Symbolic mathematics]
+- **Team:** [Sawrasit Sriviset : Simscape Multibody]
 - **Status:** Working on Symbolic mathematics
 - **Last updated:** [2026-10-21]
 
