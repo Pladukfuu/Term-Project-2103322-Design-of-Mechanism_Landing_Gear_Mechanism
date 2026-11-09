@@ -4,7 +4,7 @@
 - **Problem / purpose:** [To investigate the kinematic trajectories and linkage rotation angles during the retraction and deployment processes to ensure smooth and uninterrupted operation.]
 - **Team:** [Sawrasit Sriviset : Simscape Multibody]
 - **Status:** Working on docs
-- **Last updated:** [2026-10-21]
+- **Last updated:** [2026-11-09]
 
 ## Repository structure
 
