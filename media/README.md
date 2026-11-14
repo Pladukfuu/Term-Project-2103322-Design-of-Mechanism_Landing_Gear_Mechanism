@@ -13,7 +13,7 @@
 ### Preview
 | 3D Render | Fully Extended | Fully Retracted |
 | :---: | :---: | :---: |
-| ![Render](./project%20images/Render.png) | ![Extended](./project%20images/extended_position.png) | ![Retracted](./project%20images/retracted_position.png) |
+| ![Render](./project%20images/Render.jpg) | ![Extended](./project%20images/extended_position.png) | ![Retracted](./project%20images/retracted_position.png) |
 
 ---
 
