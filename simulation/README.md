@@ -5,8 +5,9 @@
 ---
 
 ## 1. Directory & File Structure 
-* **`Landing_Gear_Simscape_multibody.slx`** – ไฟล์โมเดลหลักใน Simulink / Simscape Multibody สำหรับจำลองการเคลื่อนที่และเก็บข้อมูล Kinematics ของจุดศูนย์กลางล้อ
-* **`Wheel_Kinematics_Clean.png`** – กราฟผลลัพธ์แสดงตำแหน่ง ความเร็ว และความเร่งเชิงเส้นของจุดศูนย์กลางล้อ ($t = 0.02\text{ s}$ ถึง $4.38\text{ s}$)
+* **`Landing_Gear_Simscape_multibody.slx`** – ไฟล์โมเดลใน Simulink / Simscape Multibody สำหรับจำลองการเคลื่อนที่และเก็บข้อมูล Kinematics ของจุดศูนย์กลางล้อ
+* **`Landing_Gear_Simscape_Matlab.m`** – สคริปต์ MATLAB สำหรับดึงข้อมูลจาก Workspace และสร้างกราฟ
+* **Output Plots:** `Wheel_Trajectory.png`, `Wheel_Position.png`, `Wheel_Velocity.png`, `Wheel_Acceleration.png` – กราฟแสดงเส้นทางการเคลื่อนที่ ตำแหน่ง ความเร็ว และความเร่งของจุดศูนย์กลางล้อ ($t = \text{ s}$ ถึง $4.5\text{ s}$)
 * **`cad/`** – โฟลเดอร์เก็บไฟล์ชิ้นงาน 3 มิติต้นฉบับ:
   * `Landing Gear mechanism assembly.f3d` – ไฟล์ประกอบชิ้นส่วนต้นฉบับ (Autodesk Fusion)
   * `Landing Gear assembly.iam` – ไฟล์ประกอบชิ้นส่วน (Autodesk Inventor)
@@ -37,11 +38,17 @@
   * **Sensors:** ติดตั้ง `Transform Sensor` ที่จุดศูนย์กลางของ `Wheel.step` เทียบกับ World Frame เพื่อบันทึกค่า `x_wheel`, `v_wheel` และ `a_wheel` ลงใน Workspace
 * **Material Properties (คุณสมบัติวัสดุ):**
   * กำหนดความหนาแน่นสม่ำเสมอ (Uniform Density) ให้กับชิ้นส่วน `File Solid` ทุกชิ้นเพื่อให้โปรแกรมคำนวณมวลและโมเมนต์ความเฉื่อย อัตโนมัติจากปริมาตร CAD
-* **Solver Settings (การตั้งค่าตัวคำนวณ):**
-  * ใช้ **Variable-Step Solver** มาตรฐานของ Simulink/Simscape (Auto / `daessc` หรือ `ode23t`) พร้อมกำหนดแรงโน้มถ่วงในบล็อก `Mechanism Configuration`
+
 
 ---
 
 
 ## 4. Simulation Output Preview
-![Wheel Center Kinematics](./Wheel_Kinematics_Clean.png)
+
+| Trajectory Path (Y-Z Plane) | Position vs Time |
+| :---: | :---: |
+| ![Wheel Trajectory](./Wheel_Trajectory.png) | ![Wheel Position](./Wheel_Position.png) |
+
+| Velocity vs Time | Acceleration vs Time |
+| :---: | :---: |
+| ![Wheel Velocity](./Wheel_Velocity.png) | ![Wheel Acceleration](./Wheel_Acceleration.png) |
